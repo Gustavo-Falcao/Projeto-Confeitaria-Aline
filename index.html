@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Confeitaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+    <body>
+        
+        <nav id="menu-main">
+
+            <div id="menu">
+                <img class="logo" src="imagens/logo-sem-fundo.png" alt="">
+            
+                <div id="opcoes">
+                    <div class="sombra-menu">Home</div>
+                    <div class="sombra-menu">Produtos</div>
+                    <div class="sombra-menu">Sobre</div>
+                    <div class="sombra-menu">Contato</div>
+                    <!-- <div class="sombra-menu">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div> -->
+                </div>
+            </div>
+            
+        </nav>
+
+        <main>
+            
+            <article id="art1">
+                <section id="introducao">
+
+                    <h1 class="Titulo">Minnie Confeitaria</h1>
+    
+                    <p>
+                        Onde cada mordida é um conto de fadas para o seu paladar.
+                    </p>
+    
+                </section>
+    
+                <section id="imagem-mulher">
+                    <img id="foto_bolo" src="imagens/confeiteira.jpg" alt="Imagem Mulher">
+                </section>
+            </article>
+            
+            <article id="art2">
+                <h1 class="titulo-sabores">Conheça nossos sabores</h1>
+                <section id="sabores">
+                    
+                    <div id="foto-sabores" >
+                        <div id="caixa-bolo" class="alinhamento-caixas">
+                            <div id="f-bolo" class="caixas-foto">
+                                <img class="ajuste-foto" src="imagens/bolo-fatia.jpg" alt="Bolo"> 
+                                <h2 class="sobrepondo">
+                                    BOLOS
+                                </h2>
+                            </div>
+                            <button class="botao">Saiba mais</button>
+                        </div>
+                        
+                        <div id="caixa-cupkake" class="alinhamento-caixas">
+                            <div id="f-cupkake" class="caixas-foto">
+                                <img class="ajuste-foto" src="imagens/cupkake.jpg" alt="Cupkake">
+                                <h2 class="sobrepondo">CUPKAKE</h2>
+                            </div>
+                            <button class="botao">Saiba mais</button>
+                        </div>
+                        
+                        <div id="caixa-docinho" class="alinhamento-caixas">
+                            <div id="f-doces" class="caixas-foto">
+                                <img class="ajuste-foto" src="imagens/docinhos.jpg" alt="Docinho">
+                                <h2 class="sobrepondo">DOCINHO</h2>
+                            </div>
+                            <button class="botao">Saiba mais</button>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            
+            <footer>
+                <article id="conteudo">
+                    <section>
+                        <img style="height: 250px;" src="imagens/logo-sem-fundo.png" alt="">
+                    </section>
+                    <section>
+                        
+                        <p>
+                            <a href="#" class="icon"> <i class="fa-sharp-duotone fa-solid fa-phone"></i></a>
+                            +55(41)99999-9999
+                        </p>
+                            
+                        <p>
+                            <a href="#" class="icon"><i class="fa-sharp-duotone fa-solid fa-square-envelope"></i></a>
+                            aline13calixto@gmail.com
+                        </p>
+                    
+                        <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="icon" style="margin-left: 5px;"> <i class="fa-brands fa-whatsapp"></i></a>
+                        
+                    </section>
+                </article>
+
+                <aside>
+                    <p>
+                        <a href="#" class="links">Sobre a Minnie</a>
+                        <a href="#" class="links borda">Contato</a>
+                        <a href="#" class="links">Produtos</a>
+                    </p>
+                </aside>
+            </footer>
+        </main>
+
+        <script>
+
+            const menu = document.getElementById('menu-main');
+            
+            function rolagem() {
+                if (window.scrollY > 0) {
+                    menu.classList.add('filtro');
+                    console.log("Menu desfocado!!")
+                } else {
+                    menu.classList.remove('filtro');
+                    console.log("Menu normal!!");
+                }
+            }
+            
+            window.addEventListener('scroll', rolagem);
+        </script>
+
+    </body>
+</html>

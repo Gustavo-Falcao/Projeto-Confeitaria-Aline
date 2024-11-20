@@ -1,0 +1,348 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    background-image: url("imagens/img-nova.png");
+    font-family: iFood RC Textos, helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.Titulo {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-block-end: 0; 
+  margin-block-start: 0;
+  font-size: 40px;
+  color: #9C6AB5;
+  /* color: #6D3A5B; */
+  
+}
+
+
+#opcoes
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    /* color: #582e4a; */
+    /* color: #D32F2F; */
+    color: #9C6AB5;
+}
+
+.sombra-menu
+{
+    padding: 10px;
+    /* border-radius: 20px; */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sombra-menu:hover
+{
+    background-color: #9C6AB5;
+    transition: 0.5s;
+    color: white;
+}
+
+
+#menu-main
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: fixed;
+    margin-top: 0;
+    width: 100%; 
+    z-index: 10;
+    /* background-color: white; */
+}
+
+#menu-main.filtro
+{
+    backdrop-filter: blur(10px);
+    background-color: #ffffff10; 
+
+}
+
+
+#art1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* cada seção ocupa a altura da viewport */
+    text-align: center;
+    scroll-snap-align: start;
+
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#introducao > p{
+    margin: 0;
+    text-align: justify;
+    color: #9C6AB5;
+    font-family: "Pacifico", cursive;
+}
+
+#introducao
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+
+.botao{
+    background-color: rgb(255, 227, 194);
+    /* background-color: #D32F2F; */
+    border-radius: 100px;
+    box-shadow: hsl(33, 100%, 0.2) 0 -25px 18px -14px inset,rgba(255, 227, 194, 0.15) 0 1px 2px,rgba(255, 227, 194, 0.15) 0 2px 4px,rgba(255, 227, 194, 0.15) 0 4px 8px,rgba(255, 227, 194, 0.15) 0 8px 16px,rgba(255, 227, 194, 0.15) 0 16px 32px; 
+    color: rgb(121, 32, 32);
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 15px; /* 20px anterior*/
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100px; /* 120px anterior */
+    font-weight: bold;
+    margin: 10px 0px 5px 0px;
+}
+  
+  /* .botao:hover {
+    box-shadow: rgba(26, 6, 138, 0.35) 0 -25px 18px -14px inset,rgba(22, 2, 136, 0.35) 0 -25px 18px -14px,rgba(23, 2, 141, 0.35) 0 -25px 18px -14px,rgba(22, 3, 129, 0.35) 0 -25px 18px -14px,rgba(18, 1, 112, 0.35) 0 -25px 18px -14px,rgba(16, 0, 102, 0.35) 0 -25px 18px -14px;
+    transform: scale(1.05) rotate(-1deg);
+  } */
+
+  .botao:hover
+  {
+    transition: 0.5s;
+    /* box-shadow: rgba(228, 228, 228, 0.35) 0 -25px 18px -14px inset,rgba(179, 179, 187, 0.35) 0 -25px 18px -14px,rgba(148, 146, 156, 0.35) 0 -25px 18px -14px,rgba(130, 130, 131, 0.35) 0 -25px 18px -14px,rgba(137, 137, 138, 0.35) 0 -25px 18px -14px,rgba(88, 88, 88, 0.35) 0 -25px 18px -14px; */
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+#foto_bolo
+{
+    height: 400px;
+    border-radius: 40px;
+}
+
+#imagem-mulher
+{
+    width: 50%;
+}
+
+.logo
+{
+    height: 100px;
+
+}
+
+#menu
+{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 5px 0;
+}
+
+
+#logos
+{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.titulo-sabores
+{
+    font-family: "Merienda", cursive;
+    font-weight: 700;
+    font-size: 2em;
+    /* color: #D32F2F; */
+    color: brown;
+}
+
+#foto-sabores
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.foto-opcoes
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+.caixas-foto
+{
+    height: 320px;
+    width: 230px;
+}
+
+/* .caixas-foto:hover
+{
+    transform: translateY(-10px);
+    transition: 0.5s;
+} */
+
+
+
+.ajuste-foto
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.sobrepondo
+{
+    position: relative ;
+    text-align: center;
+    margin: auto;
+    bottom: 310px;
+    font-family: inherit;
+    font-size: 25px;
+    font-weight: bolder;
+    backdrop-filter: blur(10px);
+    background-color: #0000003b;
+    border-radius: 80px;
+    padding: 5px;
+    width: 80%;
+    color: rgb(255, 227, 194);
+    z-index: 5;
+}
+
+/* .sobrepondo:hover
+{
+    padding-bottom: 50px;
+} */
+
+#sabores
+{
+    /* background-color: #ad5d4e; */
+    /* background-color: #6D3A5B; */
+    /* background-color: #B6B2B2; */
+    background-color: rgb(121, 32, 32);
+    color: white;
+    padding: 40px 0px;
+    margin: 50px;
+    border-radius: 5px;
+    box-shadow:1px 2px 8px 1px #0000006b;
+}
+
+#art2
+{
+    text-align: center;
+}
+
+.alinhamento-caixas
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alinhamento-caixas:hover
+{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.animacao
+{
+    padding-bottom: 50px;
+    transition: 0.5s;
+}
+
+.icon
+{
+    font-size: 25px;
+}
+
+
+/* #telefone
+{
+
+} */
+
+footer
+{
+    background-color: #FAD9E6;
+}
+
+#conteudo
+{
+    margin: 30px 30px 0px 30px;
+    padding: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+aside
+{
+    margin: 0px 30px 30px 30px;
+}
+
+.links
+{
+    padding: 0px 10px 0px 10px ;
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover
+{
+    text-decoration: underline;
+    
+}
+
+.borda
+{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
